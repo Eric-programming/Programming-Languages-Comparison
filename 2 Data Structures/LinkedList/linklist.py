@@ -30,33 +30,36 @@ class LinkedList(object):
         return self.count
 
     def insert(self, data):
+        # TODO: insert a new node
         new_node = Node(data)
         new_node.set_next(self.head)
         self.head = new_node
         self.count += 1
 
     def find(self, val):
+        # TODO: find the next value for the
         item = self.head
-        while (item != None):
-            if item.get_data() == val:
+        while item != None:
+            if (val == item.get_data()):
                 return item
             else:
                 item = item.get_next()
         return None
 
     def deleteAt(self, idx):
-        if idx > self.count:
-            return
-        if self.head == None:
+        # TODO: delete an item at given index
+        if idx > self.count-1:
             return
         else:
-            tempIdx = 0
-            node = self.head
-            while tempIdx < idx-1:
-                node = node.get_next()
-                tempIdx += 1
-            node.set_next(node.get_next().get_next())
-            self.count -= 1
+            goDown = self.count
+            item = self.head
+
+            while goDown > 0:
+                if (idx + 1 == goDown):
+                    item.
+                else:
+                    item = item.get_next()
+                    goDown -= 1
 
     def dump_list(self):
         tempnode = self.head
@@ -71,7 +74,6 @@ itemlist.insert(38)
 itemlist.insert(49)
 itemlist.insert(13)
 itemlist.insert(15)
-
 itemlist.dump_list()
 
 # exercise the list
@@ -80,7 +82,7 @@ print("Finding item: ", itemlist.find(13))
 print("Finding item: ", itemlist.find(78))
 
 # delete an item
-itemlist.deleteAt(3)
-print("Item count: ", itemlist.get_count())
-print("Finding item: ", itemlist.find(38))
-itemlist.dump_list()
+# itemlist.deleteAt(3)
+# print("Item count: ", itemlist.get_count())
+# print("Finding item: ", itemlist.find(38))
+# itemlist.dump_list()
