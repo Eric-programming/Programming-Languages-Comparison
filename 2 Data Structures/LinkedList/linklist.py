@@ -49,23 +49,24 @@ class LinkedList(object):
     def deleteAt(self, idx):
         # TODO: delete an item at given index
         if idx > self.count-1:
-            return
+            return None
+        if idx == 0:
+            self.head = self.head.get_next()
         else:
-            goDown = self.count
-            item = self.head
-
-            while goDown > 0:
-                if (idx + 1 == goDown):
-                    item.
-                else:
-                    item = item.get_next()
-                    goDown -= 1
+            tempIndex = 0
+            node = self.head
+            while tempIndex != idx - 1:
+                node = node.get_next()
+                tempIndex += 1
+            node.set_next(node.get_next().get_next())
 
     def dump_list(self):
         tempnode = self.head
+        index = 0
         while (tempnode != None):
-            print("Node: ", tempnode.get_data())
+            print("Node", index, " : ", tempnode.get_data())
             tempnode = tempnode.get_next()
+            index += 1
 
 
 # create a linked list and insert some items
@@ -82,7 +83,7 @@ print("Finding item: ", itemlist.find(13))
 print("Finding item: ", itemlist.find(78))
 
 # delete an item
-# itemlist.deleteAt(3)
-# print("Item count: ", itemlist.get_count())
-# print("Finding item: ", itemlist.find(38))
-# itemlist.dump_list()
+itemlist.deleteAt(3)
+print("Item count: ", itemlist.get_count())
+print("Finding item: ", itemlist.find(38))
+itemlist.dump_list()
