@@ -1,33 +1,241 @@
 # Implement a merge sort with recursion
+items = [{"id": 1102},
+         {"id": 4999},
+         {"id": 2814},
+         {"id": 9679},
+         {"id": 3665},
+         {"id": 2361},
+         {"id": 7529},
+         {"id": 8217},
+         {"id": 7193},         {"id": 4385},
+         {"id": 3056},
+         {"id": 1945},
+         {"id": 7027},
+         {"id": 5131},
+         {"id": 4685},
+         {"id": 8704},
+         {"id": 6479},
+         {"id": 5183},
+         {"id": 4827},
+         {"id": 9982},
+         {"id": 8292},
+         {"id": 5651},
+         {"id": 3885},
+         {"id": 6496},
+         {"id": 842},
+         {"id": 1406},
+         {"id": 7709},
+         {"id": 1176},
+         {"id": 8130},
+         {"id": 9988},
+         {"id": 9528},
+         {"id": 520},
+         {"id": 6756},
+         {"id": 4058},
+         {"id": 4672},
+         {"id": 9964},
+         {"id": 5461},
+         {"id": 5414},
+         {"id": 5986},
+         {"id": 5125},
+         {"id": 476},
+         {"id": 755},
+         {"id": 3780},
+         {"id": 9929},
+         {"id": 5992},
+         {"id": 1852},
+         {"id": 5087},
+         {"id": 5721},
+         {"id": 158},
+         {"id": 7279},
+         {"id": 50},
+         {"id": 753},
+         {"id": 2144},
+         {"id": 6892},
+         {"id": 1993},
+         {"id": 7378},
+         {"id": 6739},
+         {"id": 8857},
+         {"id": 4114},
+         {"id": 5724},
+         {"id": 9053},
+         {"id": 7359},
+         {"id": 4253},
+         {"id": 4767},
+         {"id": 2440},
+         {"id": 2835},
+         {"id": 5318},
+         {"id": 9839},
+         {"id": 4304},
+         {"id": 4623},
+         {"id": 344},
+         {"id": 7748},
+         {"id": 9986},
+         {"id": 230},
+         {"id": 5834},
+         {"id": 232},
+         {"id": 4650},
+         {"id": 7133},
+         {"id": 5506},
+         {"id": 5418},
+         {"id": 7588},
+         {"id": 40},
+         {"id": 4432},
+         {"id": 36},
+         {"id": 2422},
+         {"id": 5943},
+         {"id": 1006},
+         {"id": 7584},
+         {"id": 4240},
+         {"id": 9039},
+         {"id": 780},
+         {"id": 3086},
+         {"id": 9650},
+         {"id": 4518},
+         {"id": 7853},
+         {"id": 6401},
+         {"id": 4597},
+         {"id": 8494},
+         {"id": 4852},
+         {"id": 6460},
+         {"id": 4615},
+         {"id": 1210},
+         {"id": 7931},
+         {"id": 3780},
+         {"id": 346},
+         {"id": 3951},
+         {"id": 2060},
+         {"id": 8911},
+         {"id": 9522},
+         {"id": 5356},
+         {"id": 4165},
+         {"id": 6866},
+         {"id": 7146},
+         {"id": 4593},
+         {"id": 9205},
+         {"id": 6511},
+         {"id": 3991},
+         {"id": 2137},
+         {"id": 5618},
+         {"id": 9446},
+         {"id": 7120},
+         {"id": 9874},
+         {"id": 3595},
+         {"id": 723},
+         {"id": 5932},
+         {"id": 5911},
+         {"id": 7199},
+         {"id": 2581},
+         {"id": 7990},
+         {"id": 5521},
+         {"id": 9784},
+         {"id": 3714},
+         {"id": 9084},
+         {"id": 3618},
+         {"id": 9349},
+         {"id": 7456},
+         {"id": 2087},
+         {"id": 643},
+         {"id": 6388},
+         {"id": 766},
+         {"id": 1075},
+         {"id": 7783},
+         {"id": 8018},
+         {"id": 2683},
+         {"id": 8517},
+         {"id": 9977},
+         {"id": 3922},
+         {"id": 9225},
+         {"id": 4415},
+         {"id": 9695},
+         {"id": 2612},
+         {"id": 2287},
+         {"id": 3374},
+         {"id": 9851},
+         {"id": 1406},
+         {"id": 7556},
+         {"id": 2030},
+         {"id": 4907},
+         {"id": 5647},
+         {"id": 109},
+         {"id": 4759},
+         {"id": 6979},
+         {"id": 2463},
+         {"id": 1910},
+         {"id": 8732},
+         {"id": 2434},
+         {"id": 9629},
+         {"id": 1331},
+         {"id": 9101},
+         {"id": 2016},
+         {"id": 1157},
+         {"id": 2479},
+         {"id": 7493},
+         {"id": 7683},
+         {"id": 4715},
+         {"id": 2896},
+         {"id": 2377},
+         {"id": 6571},
+         {"id": 58},
+         {"id": 387},
+         {"id": 3672},
+         {"id": 4311},
+         {"id": 7126},
+         {"id": 1919},
+         {"id": 3376},
+         {"id": 1995},
+         {"id": 8153},
+         {"id": 2691},
+         {"id": 3034},
+         {"id": 287},
+         {"id": 4257},
+         {"id": 9911},
+         {"id": 9},
+         {"id": 2071},
+         {"id": 4493},
+         {"id": 1532},
+         {"id": 1489},
+         {"id": 2838},
+         {"id": 2165},
+         {"id": 2335}
+         ]
 
-
-items = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 
 def mergesort(dataset):
+    # recursion to split dataset into small array
     if len(dataset) > 1:
         mid = len(dataset) // 2
-        leftarr = dataset[:mid]
-        rightarr = dataset[mid:]
+        left = dataset[:mid]
+        right = dataset[mid:]
 
-        # TODO: recursively break down the arrays
+        mergesort(left)
+        mergesort(right)
+        # use loops to group them together
+        leftIndex = 0
+        rightIndex = 0
+        currentIndex = 0
+        while (leftIndex < len(left) and rightIndex < len(right)):
+            if (left[leftIndex]["id"] < right[rightIndex]["id"]):
+                dataset[currentIndex] = left[leftIndex]
+                leftIndex += 1
+                currentIndex += 1
+
+            else:
+                dataset[currentIndex] = right[rightIndex]
+                rightIndex += 1
+                currentIndex += 1
+        while leftIndex < len(left):
+            dataset[currentIndex] = left[leftIndex]
+            leftIndex += 1
+            currentIndex += 1
+        while rightIndex < len(right):
+            dataset[currentIndex] = right[rightIndex]
+            currentIndex += 1
+            rightIndex += 1
 
 
-        # TODO: now perform the merging
-        i=0 # index into the left array
-        j=0 # index into the right array
-        k=0 # index into merged array
-
-        # TODO: while both arrays have content
-
-
-        # TODO: if the left array still has values, add them
-
-
-        # TODO: if the right array still has values, add them
-
-
-
+# items2 = [4, 3, 2, 1, 5, 6, 7, 8, 9]
 # test the merge sort with data
-print(items)
+# print(items)
 mergesort(items)
 print(items)
