@@ -7,9 +7,15 @@ items = ["apple", "pear", "orange", "banana", "apple",
          "apple", "kiwi", "pear", "apple", "orange"]
 
 # TODO: create a hashtable object to hold the items and counts
-counter = None
+counter = {}
+
 
 # TODO: iterate over each item and increment the count for each one
+for value in items:
+    if (value in counter.keys()):
+        counter[value] += 1
+    else:
+        counter[value] = 1
 
 
 # print the results
