@@ -2,7 +2,7 @@
 
 
 ## Programming Languages Comparison
-> This repo focus on compare programming language syntax
+> This repo focus on compare programming languages syntax
 
 ## Comparison in Video
 [Programming Languages Comparison Playlist](https://youtube.com/playlist?list=PL1MJrDFRFiKYczRNb7PuBtJ_cWiVzuv6P)
