@@ -6,6 +6,17 @@
 
 [Programming Languages Comparison Playlist](https://youtube.com/playlist?list=PL1MJrDFRFiKYczRNb7PuBtJ_cWiVzuv6P)
 
-- Version: 1.0.0
-- License: MIT
-- Author: Eric
+## Things to compare
+
+- Array
+- Dynamic Array
+- Hash Table
+- Heap
+- Sort
+- Stack & Queue
+- String
+- Exception Handling
+
+* Version: 1.0.0
+* License: MIT
+* Author: Eric

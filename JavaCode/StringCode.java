@@ -24,7 +24,7 @@ public class StringCode {
 
         // Append char
         StringBuilder sb = new StringBuilder(str);
-        sb.append("0");
+        sb.append('0');
         System.out.println(sb.toString());
     }
 }

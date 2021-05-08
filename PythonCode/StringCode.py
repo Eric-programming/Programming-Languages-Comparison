@@ -18,4 +18,4 @@ print(s[1:3])
 
 
 # Append char
-s += "00000"
+s += "0"

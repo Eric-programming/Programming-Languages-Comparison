@@ -13,5 +13,7 @@ l2.sort(key=sortBy)
 print(l2)
 
 #Sort in descending
-print(l1.sort(reverse=true))
-print(l2.sort(reverse=true, key=sortBy))
+l1.sort(reverse=True)
+print(l1)
+l2.sort(reverse=True, key=sortBy)
+print(l2)

@@ -21,4 +21,4 @@ largest = maxHeap[0]
 
 # Deletion
 print(heapq.heappop(minHeap))
-print(heapq.heappop(maxHeap))
+print(heapq._heappop_max(maxHeap))

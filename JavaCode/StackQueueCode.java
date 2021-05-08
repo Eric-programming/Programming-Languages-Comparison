@@ -7,8 +7,8 @@ public class StackQueueCode {
 
     public static void demo() {
         // Define
-        Stack<Integer> stack = new Stack<>();
-        Queue<Integer> queue = new LinkedList<>();
+        Stack<Integer> stack = new Stack<>();// LIFO
+        Queue<Integer> queue = new LinkedList<>();// FIFO
 
         // Insertion
         stack.push(1);

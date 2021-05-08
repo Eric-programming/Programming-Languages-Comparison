@@ -23,6 +23,6 @@ public class HeapCode {
 
         // Deletion
         System.out.println(minHeap.poll());
-        System.out.println(maxHeap.peek());
+        System.out.println(maxHeap.poll());
     }
 }

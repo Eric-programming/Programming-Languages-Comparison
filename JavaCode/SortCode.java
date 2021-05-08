@@ -32,7 +32,7 @@ public class SortCode {
         Arrays.sort(l2);
         System.out.println("\n l2 =>" + Arrays.toString(l2));
         Arrays.sort(l3, (a, b) -> a.id - b.id);
-        System.out.println("\n l3 =>" + Arrays.deepToString(l3));
+        System.out.println("\n l3 =>" + Arrays.toString(l3));
 
         // Sort in descending
         Collections.sort(l1, Collections.reverseOrder());
@@ -40,7 +40,7 @@ public class SortCode {
         Arrays.sort(l2, Collections.reverseOrder());
         System.out.println("\n l2 =>" + Arrays.toString(l2));
         Arrays.sort(l3, (a, b) -> b.id - a.id);
-        System.out.println("\n l3 =>" + Arrays.deepToString(l3));
+        System.out.println("\n l3 =>" + Arrays.toString(l3));
     }
 
 }
