@@ -1,4 +1,12 @@
-## Programming Languages Comparison
 
-* Java
-* Python
+
+
+## Programming Languages Comparison
+> This repo focus on compare programming language syntax
+
+## Comparison in Video
+[Programming Languages Comparison Playlist](https://youtube.com/playlist?list=PL1MJrDFRFiKYczRNb7PuBtJ_cWiVzuv6P)
+
+- Version: 1.0.0
+- License: MIT
+- Author: Eric
